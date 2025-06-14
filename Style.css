@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Espaçamento{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+    align-items: center;
+}
+.Container {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+    align-items: center;
+    
+
+}
+.Logo {
+width: 10rem;
+}
+.LogoImg{
+    width: 4rem;
+    height: auto;
+    padding: 1rem;
+}
+.Container div {
+    font-size: 15px;
+}
+
+.Container ul {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.Container a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+}
+
+.SeçãoDestaque{
+display: flex;
+justify-content: space-between;
+
+
+    background-color: black;
+    color: white;
+    padding: 19rem;
+ background-repeat:no-repeat  ;
+
+
+}
+.TextoDestaque{
+display: flex;
+align-items: center;
+    font-size: 4rem;
+
+ } 
+ .ImgRomario{
+    width: 154rem;
+    height: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid white;
+
+  }
+
+.Textos{
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+.Cards{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.CardParte1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+}
+
+.CardParte2{
+    margin-top: 10rem;
+}
+.EstruturaCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    border: 0.1rem solid rgb(206, 183, 183);
+
+    border-radius: 1rem;
+}
+.ImgCard{
+    max-width: 25rem;
+    flex: 1;
+}
+.TituloCard{
+    display: flex;
+    justify-content: center;
+  
+
+}
+.DescriçãoCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.2rem;
+    width: 20rem;
+}
+ .footer{
+background-color: rgb(0, 0, 0);
+display: flex;
+flex-direction: column;
+color: white;
+width: 100%;
+height: 100%;
+ }
+ .Rodape{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+
+ }
