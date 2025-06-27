@@ -15,32 +15,23 @@
     align-items: center;
 }
 
-/* MENU */
-.menu-toggle {
-    display: none;
-    gap: 1rem;
-}
 
-.hamburger {
+.menu{
     display: none;
-    font-size: 2rem;
-    cursor: pointer;
+     
+}
+.nav-menu{
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;  
 }
-
 .nav-menu .menu {
+    
     display: flex;
     gap: 2.5rem;
     list-style: none;
 }
-
-.nav-menu .menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
 
 .Container {
     background-color: black;
@@ -71,19 +62,25 @@
     background-color: black;
     color: white;
     gap: 1rem;
-    padding: 1rem;
+    padding: 2.5rem;
 }
 
 .TextoDestaque {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 100%;
     padding: 0.5rem;
 }
 
-.ImgRomario {
+.imgMenu{
     width: 100%;
-    max-width: 15rem;
+max-width: 3rem;
+
+
+}
+.ImgRomario {
+    width: 90%;
+    max-width: 43rem;
     height: auto;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -107,9 +104,11 @@
 .Cards {
     display: flex;
     flex-direction: column;
+  
     background-color: black;
     gap: 3rem;
     padding: 1rem;
+ 
 }
 
 .CardParte1 {
@@ -129,7 +128,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    width: 100%;
+    width: 90%;
     background-color: white;
     border: 1px solid #ceb7b7;
     border-radius: 1rem;
@@ -138,7 +137,7 @@
 }
 
 .ImgCard {
-    width: 100%;
+    width: 90%;
     max-width: 20rem;
     border-radius: 1rem;
     padding: 1rem;
@@ -223,38 +222,33 @@
     color: #ffcc00;
 }
 
-/* responsividade do menu hambuerguer*/
+
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
 
     .nav-menu .menu {
-        display: none;
-        flex-direction: column;
-        background-color: black;
-        position: absolute;
-        top: 70px;
-        left: 0;.hamburger{
-            display:block
-        }
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-        z-index: 10;
-    }
-
-    .menu-toggle:checked + .hamburger + .nav-menu .menu {
-        display: flex;
-    }
-
-    .nav-menu .menu li {
-        padding: 0.7rem 0;
-    }
-
+    display: none;}
+    .menu{
+    display: none;
+}
+      
+      
+ 
 }
 @media (min-width: 768px) and (max-width: 1024px){
+.imgMenu{
+    display: none;
+}
+.menu{
+    display: block;
+  
 
+}
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;  
+}
 body{
     font-size: clamp(1rem,2vw,1.2rem) ;
 }
@@ -265,7 +259,10 @@ body{
     font-size:clamp(1rem,2.5vw,1.3rem);
 }
 
-
+.SeçãoDestaque{
+    display: grid;
+    grid-row: 3;
+}
 .Cards{
     display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -274,70 +271,93 @@ gap: 2rem;
 .footer-container{
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 .footer-coluna{
     flex: 1 1 45%;
     min-width: 45%;
 }
+.ImgRomario {
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+ 
+}
 
 }
-@media (min-width: 1025px) {
-   body {
-        font-size: clamp(1rem, 2vw, 1.4rem);
+@media (min-width: 1024px){
+    .imgMenu{
+        display: none;
     }
-
-    .TextoDestaque {
-        font-size: clamp(1rem, 2vw, 1.4rem);
-    }
-
-    .DescriçãoCard {
-        font-size: clamp(1rem, 2vw, 1.5rem);
-    }
-
-
-    .Cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        padding: 2rem;
-        background-color: black;
-    }
-
-   
-    .Espaçamento {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 5rem;
-        align-items: center;
-        padding: 1rem 2rem;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 3rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .footer-coluna {
-        flex: 1 1 30%;
-        min-width: 30%;
-    }
-
-
-    .EstruturaCard {
-        padding: 1.5rem;
-        border-radius: 1.2rem;
-        box-shadow: -0.5rem 0.5rem 1rem rgba(128, 128, 128, 0.5);
-    }
-
-    .ImgCard {
-        max-width: 18rem;
-        padding: 1rem;
-        margin: 0 auto;
+    .menu{
         display: block;
+
+    }
+    .nav-menu a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;  
+    }
+    body{
+        font-size: clamp(1rem,2vw,1.2rem) ;
+    }
+    .TextoDestaque{
+        font-size: clamp(1rem,2.5vw,1.3rem);
+    }
+    .DescriçãoCard{
+        font-size:clamp(1rem,2.5vw,1.3rem);
+    }
+    
+    .SeçãoDestaque{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+    }
+    .TextoDestaque{
+        font-size: 3rem;
+    }
+
+    .Cards{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+    }
+    .CardParte1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+
+      .EstruturaCard {
+        width: 100%;
+      }
+    .footer-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.8rem;
+    }
+    .footer-coluna{
+        flex: 1 1 45%;
+        min-width: 45%;
+    }
+    .ImgRomario {
+        width: 100%;
+        max-width: 70rem;
+        height: auto;
+     
+    }
+    .ImgCard{
+        width: 100%;
+        max-width: 30rem;
+    }
+    .EstruturaCard{
+        
+        margin: 0;
+        display: flex;
+        justify-content: center;
     }
 }
+
+
