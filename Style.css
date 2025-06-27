@@ -235,7 +235,9 @@
         background-color: black;
         position: absolute;
         top: 70px;
-        left: 0;
+        left: 0;.hamburger{
+            display:block
+        }
         width: 100%;
         text-align: center;
         padding: 1rem 0;
@@ -248,5 +250,94 @@
 
     .nav-menu .menu li {
         padding: 0.7rem 0;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px){
+
+body{
+    font-size: clamp(1rem,2vw,1.2rem) ;
+}
+.TextoDestaque{
+    font-size: clamp(1rem,2.5vw,1.3rem);
+}
+.DescriçãoCard{
+    font-size:clamp(1rem,2.5vw,1.3rem);
+}
+
+
+.Cards{
+    display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 2rem;
+}
+.footer-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.footer-coluna{
+    flex: 1 1 45%;
+    min-width: 45%;
+}
+
+}
+@media (min-width: 1025px) {
+   body {
+        font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+    .TextoDestaque {
+        font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+    .DescriçãoCard {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+
+    .Cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        background-color: black;
+    }
+
+   
+    .Espaçamento {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-coluna {
+        flex: 1 1 30%;
+        min-width: 30%;
+    }
+
+
+    .EstruturaCard {
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+        box-shadow: -0.5rem 0.5rem 1rem rgba(128, 128, 128, 0.5);
+    }
+
+    .ImgCard {
+        max-width: 18rem;
+        padding: 1rem;
+        margin: 0 auto;
+        display: block;
     }
 }
